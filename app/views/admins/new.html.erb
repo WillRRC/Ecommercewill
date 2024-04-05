@@ -1,0 +1,10 @@
+<h1>Create an account</h1>
+<h3>Minimum of 3 charachters long for adminname and password</h3>
+<%= form_for :admin, url: '/admins' do |f| %>
+
+  <p>Name:</p> <%= f.text_field :adminname %><br>
+  <p>Password:</p> <%= f.password_field :password %><br>
+  <p>Password Confirmation:</p>> <%= f.password_field :password_confirmation %>
+  <%= f.submit "Submit" %>
+
+<% end %>

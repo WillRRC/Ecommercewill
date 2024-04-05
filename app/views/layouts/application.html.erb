@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= stylesheet_link_tag('test')%>
+  <title>Wills data</title>
+</head>
+<body>
+<div class="CurrentLogged">
+<% if current_admin %>
+  Signed in as <%= current_admin.adminname %> | <%= link_to "Logout", '/logout'%> | <%= link_to "Admin Dash", '/admindash'%>
+<% else %>
+  <%= link_to 'adminLogin', '/adminlogin' %> | <%= link_to 'Signup', '/signup' %>
+<% end %>
+</div>
+<nav>
+  <a href="/Memberlogin">Member Login</a>
+  <a href="/home">Home</a>
+
+</nav>
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+
+<h1>Login</h1>
+
+<%= form_tag '/adminlogin' do %>
+
+  adminname: <%= text_field_tag :adminname %>
+  Password: <%= password_field_tag :password %>
+  <%= submit_tag "Submit", :style => "width:100px; height:200px; background-color:blue;"%>
+
+<% end %>

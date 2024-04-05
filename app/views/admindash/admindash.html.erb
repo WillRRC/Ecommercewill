@@ -1,0 +1,20 @@
+<%= form_tag '/admindash' do %>
+
+  <label>Category name:</label> <%= text_field_tag :catname %> <br>
+  <label>catdesc:</label> <%= text_field_tag :catdesc %><br>
+  <label>cat ID:</label> <%= number_field_tag :catdesc %>
+  <%= submit_tag "Submit", :style => "width:100px; background-color:blue; color:yellow;"%>
+
+<% end %>
+
+<%= form_tag '/admindash' do %>
+
+  <label>Procut name:</label> <%= text_field_tag :name %> <br>
+  <label>product desc:</label> <%= text_field_tag :desc %><br>
+  <label>stock</label> <%= number_field_tag :stock %><br>
+  <label>Size</label> <%= text_field_tag :size %><br>
+  <label>Price</label> <%= number_field_tag  :price %><br>
+  <%= submit_tag "Submit", :style => "width:100px; background-color:blue; color:yellow;"%>
+
+<% end %>
+
